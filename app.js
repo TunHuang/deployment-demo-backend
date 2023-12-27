@@ -7,7 +7,7 @@ import Employee from './models/employeeModel.js';
 
 // initialisiere express Server
 const app = express();
-const PORT = 4000;
+const PORT = process.env.PORT || 4000;
 
 // Verbindung zu MongoDB herstellen mit Mongoose
 const URI = process.env.MONGODB_CONNECTION_STRING || 'mongodb://localhost:27017';
